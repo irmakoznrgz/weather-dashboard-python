@@ -1,24 +1,29 @@
-### Advanced Weather Dashboard ###
+### Weather Analysis Dashboard ###
 
-A Python-based weather analysis tool that retrieves detailed 7-day hourly forecasts using WeatherAPI. This project is designed to process meteorological data for statistical insights and smart user advice.
+Bu proje, Python kullanarak belirlenen bir şehir için detaylı hava durumu analizi yapan ve verileri görselleştiren bir araçtır. OpenWeatherMap API kullanılarak veriler çekilir ve Matplotlib ile görselleştirilir.
 
-##  Features (v3.0)
-- **Smart Time Filtering:** Automatically hides past hours for the current day, showing only future forecasts.
-- **Dynamic Date Labeling:** Identifies "Today" and displays specific day names (e.g., Monday).
-- **Current Status Overview:** Displays immediate temperature and condition upon launch.
-- **7-Day Forecasting:** Retrieves weather data for the upcoming week.
-- **Smart Assistant:** Provides logic-based advice for rain , snow , and freezing temperatures.
-- **Data Formatting:** Clean table view with rounded temperatures and aligned columns.
+# Özellikler (Mevcut Durum)
+- **API Entegrasyonu:** Anlık ve 7 günlük hava durumu verisi çekme.
+- **Veri Analizi:** Günlük ortalama sıcaklıklar ve hissedilen sıcaklık hesaplamaları.
+- **Görselleştirme:**
+  -  **Saatlik:** Çizgi grafik (Line Chart) ile gün içi sıcaklık değişimi.
+  -  **Haftalık:** Sütun grafik (Bar Chart) ile 7 günlük ortalama sıcaklıklar.
+- **CLI Arayüzü:** Terminal üzerinden kullanıcı etkileşimi.
 
-##  Tech Stack
+# Kullanılan Teknolojiler
 - Python 3.x
-- Requests Library (API Fetching)
-- Python-dotenv (Security)
-- Datetime Module (Time series & Logic)
+- Matplotlib (Görselleştirme)
+- Requests (API İstekleri)
+- Python-Dotenv (Çevresel Değişkenler)
 
-##  How to Run
-1. Clone the repo.
-2. Create a `.env` file and add your `WEATHER_API_KEY`.
-3. Install dependencies:
+# Gelecek Hedefler (Roadmap)
+- [ ] Projenin Masaüstü CLI halinden **Web GUI**'ye taşınması (Django/Flask).
+- [ ] Verilerin veritabanına kaydedilmesi (SQL).
+- [ ] Daha detaylı istatistiksel analizlerin eklenmesi.
+
+# Kurulum
+
+1. Repoyu klonlayın.
+2. Gerekli kütüphaneleri yükleyin:
    ```bash
    pip install -r requirements.txt
