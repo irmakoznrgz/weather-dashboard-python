@@ -1,3 +1,5 @@
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://irmak-weather-dashboard.streamlit.app/)
+
 ### 🌤️ WeatherHub - Advanced Weather Dashboard ###
 
 WeatherHub is a comprehensive weather analysis tool built with Python and Streamlit. It allows users to check real-time weather conditions, 7-day forecasts, and detailed hourly data for specific cities. It also features a comparison mode to analyze two cities side-by-side.
